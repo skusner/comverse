@@ -9,7 +9,7 @@
 	<!-- header -->
 	<header>
 		<!-- lenguage + login -->
-		<span class="headerUpSide">
+		<div class="headerUpSide">
 			<nav class="languages">
 				<ul>
 					<li>EN</li>
@@ -20,7 +20,7 @@
 			<div class="costumer">
 				Costumer login
 			</div>	
-		</span>
+		</div>
 		<!-- end of lenguage + login -->
 		<span class="headerBottom">
 			<a href="#"><img src="img/comverse-logo.png" alt="comverse logo"></a>
@@ -37,8 +37,8 @@
             
 			<!-- search field -->
 			<div class="search">
-				<label>search</label>
-				<input type="text" id="search"></input>
+				<label for="search">search</label>
+				<input type="text" name="search" id="search">
 				<img src="img/searchBtn.png" alt="search">
 			</div>
 			<!-- end of search field -->
@@ -54,10 +54,10 @@
             <p>
                 Comverse Policy Studio <span>1st</span> Ever Marketing-Oriented Policy Tool
             </p>
-            <button name="btn_slider">learn more <img src="img/btnArrow.png" alt="learn more"></button>
+            <button name="btn_slider" type="submit">learn more <img src="img/btnArrow.png" alt="learn more"></button>
             <div class="slider_boxes">
                 <article class="boxes">
-                    <a href="">
+                    <a href="#">
                         <h4>
                             Comverse Is Value Added Service Global Market Leader.
                         </h4>
@@ -67,7 +67,7 @@
                     </a>    
                 </article>
                  <article class="boxes">
-                    <a href="">
+                    <a href="#">
                         <h4>
                            Managed Services World Congress September 18-19 Berlin, Germany
                         </h4>
@@ -77,7 +77,7 @@
                     </a>    
                 </article>
                  <article class="boxes">
-                    <a href="">
+                    <a href="#">
                         <h4>
                             Comverse: Enabling a world of Conected Possibilities
                         </h4>
@@ -121,7 +121,7 @@
                     <p>Social media</p>
                 </li>                  
             </ul>
-          <button name="btn_icons">See all of our solutions <img src="img/btnArrow.png" alt="see all of our solutions"></button>  
+          <button name="btn_icons" type="submit">See all of our solutions <img src="img/btnArrow.png" alt="see all of our solutions"></button>  
 		</section>
 		<!-- end of second part -->
         
@@ -247,11 +247,72 @@
             </ul>
         </section>
         <!-- end of box Three-->   
-        <button name="btn_aside">All 256 Succses Stories<img src="img/btnArrow.png" alt="All 256 Succses Stories"></button>          
+        <button name="btn_aside" type="submit">All 256 Succses Stories<img src="img/btnArrow.png" alt="All 256 Succses Stories"></button>          
 	</aside>
 	<!-- en of succes stories -->
 	<footer>
-		
+		<nav class="footer">
+            <ul class="menu_footer">
+                <li><h6>Key Solution</h6></li>
+                <li>
+                    <ul class="inside_footer">
+                        <li><a href="#">Monetizing Data</a></li>
+                        <li><a href="#">Over the Top(OTT)</a></li>
+                        <li><a href="#">Cluod Computing</a></li>
+                        <li><a href="#">Managed Services</a></li>
+                        <li><a href="#">Costumer Experience Management</a></li>
+                        <li><a href="#">Rich Communication Suite(RCS)</a></li>
+                        <li><a href="#">Social Media</a></li>
+                        <li><a href="#">4G/LTE</a></li>
+                    </ul>
+                </li>    
+            </ul>  
+            <ul class="menu_footer">
+                <li><h6>Product & Services</h6></li>
+                <li>
+                    <ul class="inside_footer">
+                        <li><a href="#">Billing</a></li>
+                        <li><a href="#">VAS</a></li>
+                        <li><a href="#">Mobile Internet</a></li>
+                        <li><a href="#">Global Services</a></li>
+                        <li><a href="#">Training Services</a></li>
+                    </ul>
+                </li>    
+            </ul> 
+          <ul class="menu_footer">
+                <li><h6>Company</h6></li>
+                <li>
+                    <ul class="inside_footer">
+                        <li><a href="#">executive profiles</a></li>
+                        <li><a href="#">Clients</a></li>
+                        <li><a href="#">investor</a></li>
+                        <li><a href="#">partners</a></li>
+                        <li><a href="#">corporate responsabilty</a></li>
+                        <li><a href="#">industry involvement</a></li>
+                        <li><a href="#">careers</a></li>
+                    </ul>
+                </li>    
+            </ul>      
+        </nav>
+        <section class="blog">
+            <p>Latest blog posts</p>
+            <span class="date_footer">18 July</span>
+            <article>lorem ipsum lorem ipsum lorem ipsum lorem ipsum</article>
+            <p>Subscribe to comverse</p>
+            <div class="form">
+                <form action="post">
+                    <label for="mail">mail</label>
+                    <input type="mail" id="mail" value="mail@mail.com">
+                    <button name="button" type="submit">Sign Up</button>
+                </form>    
+            </div>
+            <ul class="social">
+                <li><a href="#"><img src="img/socialMenuIcon-youtube.png" alt="youtube"></a></li>
+                <li><a href="#"><img src="img/socialMenuIcon-twitter.png" alt="twitter"></a></li>
+                <li><a href="#"><img src="img/socialMenuIcon-linkdin.png" alt="linked"></a></li>
+            </ul>
+        </section>
+        <address>Copyright &copy; 2012 Comverse, Inc. | <a href="#">Privacy Policy</a></address>
 	</footer>
 </body>
 </html>
