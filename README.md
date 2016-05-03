@@ -1,4 +1,4 @@
 # comverse
 Netcraft first project
 
-##[DEMO](htpp://skusner.github.io/comverse)
+##[DEMO](http://skusner.github.io/comverse)
