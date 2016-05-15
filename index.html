@@ -8,39 +8,43 @@
 <body>
 	<!-- header -->
 	<header>
-		<!-- lenguage + login -->
-		<div class="headerUpSide">
-			<select name="select">
-			  <option value="EN" selected>EN</option> 
-			  <option value="HE" >HE</option>
-			  <option value="ES">ES</option>
-			</select>
-			<div class="costumer">
-				Costumer login
-			</div>	
-		</div>
-		<!-- end of lenguage + login -->
-		<span class="headerBottom">
-			<a href="#"><img src="img/comverse-logo.png" alt="comverse logo" width="185" height="62"></a>
-			<!-- menu -->
-			<nav>
-				<ul>
-					<li>your needs</li>
-					<li>our portfolio</li>
-					<li>news &amp; media</li>
-					<li>about comverse</li>
-				</ul>
-			</nav>
-			<!-- end of menu -->
-            
-			<!-- search field -->
-			<div class="search">
-				<label for="search">search</label>
-				<input type="text" name="search" id="search">
-				<img src="img/searchBtn.png" alt="search" width="12" height="11">
-			</div>
-			<!-- end of search field -->
-		</span>
+        <section class="main_head">
+            <div class="head_left">
+                <div class="head_logo">
+                    <a href="#"><img src="img/comverse-logo.png" alt="comverse logo" width="185" height="62"></a>
+                </div>    
+                <!-- menu -->
+                <nav class="head_menu">
+                    <ul><li><a href="#">about comverse</a></li>
+                        <li><a href="#">news &amp; media</a></li>
+                        <li><a href="#">our portfolio</a></li>
+                        <li><a href="#">your needs</a></li>
+                    </ul>
+                </nav>
+                <!-- end of menu -->
+                
+            </div>
+            <!-- lenguage + login -->
+            <div class="head_right">
+                <select class="languages" name="select">
+                  <option value="EN" selected>EN</option> 
+                  <option value="HE" >HE</option>
+                  <option value="ES">ES</option>
+                </select>
+                <div class="divider_img"><img src="img/divider.png" width="1" height="20"></div>
+                <div class="costumer_name">
+                    Costumer login
+                </div>	
+                <!-- search field -->
+                <div class="search">
+                    <label for="search">search</label>
+                    <input type="text" name="search" id="search">
+                    <img class="search_img" src="img/searchBtn.png" alt="search" width="12" height="11">
+                </div>
+                <!-- end of search field -->                
+            </div>
+            <!-- end of lenguage + login -->            
+        </section>    
 	</header>
 	<!-- end of header -->
 	<main>
@@ -49,10 +53,13 @@
 			<h1>
                 <span>Free</span> your Market From IT <span>Complexity</span>
             </h1>
-            <p>
-                Comverse Policy Studio <span>1st</span> Ever Marketing-Oriented Policy Tool
-            </p>
-            <button name="btn_slider" type="submit">learn more <img src="img/btnArrow.png" alt="learn more" width="10" height="13"></button>
+            <div class="policy">
+                Comverse Policy Studio<br><span>1st</span> Ever Marketing-Oriented Policy Tool
+            </div>
+            <div>
+           <button name="btn_slider" type="submit">learn more <img src="img/btnArrow.png" alt="learn more" width="10" height="13">
+           </button>
+             </div>    
             <div class="slider_boxes">
                 <article class="boxes">
                     <a href="#">
@@ -90,88 +97,94 @@
         
 		<!-- second part -->
 		<section class="icons">
-			<h2>
-                what can we do for you?
-            </h2>
-            <ul>
-                <li>
-                    <img src="img/solution_icon_biz-analitics.png" alt="Data monetization" width="128" height="63">
-                    <p>Data monetization</p>
-                </li>   
-                <li>
-                    <img src="img/solution_icon_diti-cx.png" alt="m2m" width="128" height="63">
-                    <p>Machine to machine(M2M)</p>
-                </li>
-                <li>
-                    <img src="img/solution_icon_smart-money.png" alt="OTT" width="128" height="63">
-                    <p>Over-the-top(OTT)</p>
-                </li>
-                <li>
-                    <img src="img/solution_icon_optimize-efficnt.png" alt="cloud computing" width="128" height="63">
-                    <p>Cloud computing</p>
-                </li>    
-                <li>
-                    <img src="img/solution_icon_personal.png" alt="managed services" width="128" height="63">
-                    <p>Managed services</p>
-                </li>
-                <li>
-                    <img src="img/solution_icon_biz-transform.png" alt="social media" width="128" height="63">
-                    <p>Social media</p>
-                </li>                  
-            </ul>
-          <button name="btn_icons" type="submit">See all of our solutions <img src="img/btnArrow.png" alt="see all of our solutions" width="10" height="13"></button>  
+            <div class="main_icons">
+                <h2>
+                    what can we do for you?
+                </h2>
+                <ul>
+                    <li>
+                        <img src="img/solution_icon_biz-analitics.png" alt="Data monetization" width="128" height="63">
+                        <p>Data monetization</p>
+                    </li>   
+                    <li>
+                        <img src="img/solution_icon_diti-cx.png" alt="m2m" width="128" height="63">
+                        <p>Machine to machine(M2M)</p>
+                    </li>
+                    <li>
+                        <img src="img/solution_icon_smart-money.png" alt="OTT" width="128" height="63">
+                        <p>Over-the-top(OTT)</p>
+                    </li>
+                    <li>
+                        <img src="img/solution_icon_optimize-efficnt.png" alt="cloud computing" width="128" height="63">
+                        <p>Cloud computing</p>
+                    </li>    
+                    <li>
+                        <img src="img/solution_icon_personal.png" alt="managed services" width="128" height="63">
+                        <p>Managed services</p>
+                    </li>
+                    <li>
+                        <img src="img/solution_icon_biz-transform.png" alt="social media" width="128" height="63">
+                        <p>Social media</p>
+                    </li>                  
+                </ul>
+                <div class="btn_wrapper">
+                    <button name="btn_icons" type="submit">See all of our solutions <img src="img/btnArrow.png" alt="see all of our solutions" width="10" height="13"></button>
+                </div>
+            </div>    
 		</section>
 		<!-- end of second part -->
         
 		<!-- third part -->
 		<section class="events">
 			<h2>What's happening at comverse</h2>
-            <div class="box_events">
-                <!--First Box-->
-                <article class="inside_boxes">
-                    <ul>
-                       <li>
-                           <h3>News</h3>
-                            <span class="date">
-                                04 sep
-                            </span>
-                            <p>Comverse Regains Lead in Convergent Chargin Market Regains Lead in</p>
-                           <a href="img/eventListIconNews.png"><img src="" alt="all news">All News</a>
-                        </li>    
-                    </ul>            
-                </article>          
-                <!-- End of First Box-->
-                
-                <!--Second box-->
-                <article class="inside_boxes">
-                    <ul>
-                       <li>
-                           <h3>Events</h3>
-                            <span class="date">
-                                04 sep
-                            </span>
-                            <p>Comverse Regains Lead in Convergent Chargin Market Regains Lead in</p>
-                           <a href="img/eeventListIconEvents.png"><img src="" alt="all Events">All News</a>
-                        </li>    
-                    </ul>            
-                </article>  
-               <!--end of second box-->
-                
-                <!--third box-->
-                <article class="inside_boxes">
-                    <ul>
-                       <li>
-                           <h3>Events</h3>
-                            <span class="date">
-                                04 sep
-                            </span>
-                            <p>Comverse Regains Lead in Convergent Chargin Market Regains Lead in</p>
-                           <a href="img/eeventListIconEvents.png"><img src="" alt="all Events">All News</a>
-                        </li>    
-                    </ul>            
-                </article>
-            <!--end of third box-->
-            </div>           
+            <div class="main_events">
+                <div class="box_events">
+                    <!--First Box-->
+                    <article class="inside_boxes">
+                        <ul>
+                           <li>
+                               <h3>News</h3>
+                                <span class="date">
+                                    04 sep
+                                </span>
+                                <p>Comverse Regains Lead in Convergent Chargin Market Regains Lead in</p>
+                               <a href="img/eventListIconNews.png"><img src="" alt="all news">All News</a>
+                            </li>    
+                        </ul>            
+                    </article>          
+                    <!-- End of First Box-->
+
+                    <!--Second box-->
+                    <article class="inside_boxes">
+                        <ul>
+                           <li>
+                               <h3>Events</h3>
+                                <span class="date">
+                                    04 sep
+                                </span>
+                                <p>Comverse Regains Lead in Convergent Chargin Market Regains Lead in</p>
+                               <a href="img/eeventListIconEvents.png"><img src="" alt="all Events">All News</a>
+                            </li>    
+                        </ul>            
+                    </article>  
+                   <!--end of second box-->
+
+                    <!--third box-->
+                    <article class="inside_boxes">
+                        <ul>
+                           <li>
+                               <h3>Events</h3>
+                                <span class="date">
+                                    04 sep
+                                </span>
+                                <p>Comverse Regains Lead in Convergent Chargin Market Regains Lead in</p>
+                               <a href="img/eeventListIconEvents.png"><img src="" alt="all Events">All News</a>
+                            </li>    
+                        </ul>            
+                    </article>
+                <!--end of third box-->
+                </div> 
+            </div>    
 		</section>
 		<!-- end of third part -->
 	</main>
@@ -179,7 +192,7 @@
 	<aside class="stories">
         <h2>Success Stories</h2>
         <!--box one-->
-        <section>
+        <section class="main_history">
             <article class="history">
                 <img src="img/CB-JP-face.png" width="100" height="100" alt="person">
                 <img src="img/quote-grey.png" alt="quote" width="27" height="20">
