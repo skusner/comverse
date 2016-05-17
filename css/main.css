@@ -13,8 +13,7 @@ header{
     width: 100%;
     box-shadow: 0px 1px 20px black ;
     height:90px;
-    z-index: 10;
-}
+   }
 
 .main_head{
     width:950px;
@@ -67,13 +66,14 @@ head_menu {
 
 .head_right{
     float: right;
-    width: 174px;
-    padding-top: 19px;
+    width: 183px;
+    padding-top: 20px;
+
 }
 
 .head_right .languages {
     float:left;
-    width: 40px;
+    width: 46px;
     border:none;
 }
 
@@ -110,12 +110,20 @@ display: none;
 
 main{
     width: 100%;
-    z-index: 9;
     margin-top:0px;
-    background-image: url("../img/slide-bg-complexity.jpg");
-    width: 100%;
-    background-repeat: no-repeat;
+/*    background-image: url("../img/slide-bg-complexity.jpg");
+    background-position: 50% 0%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;*/
 /*    height: 549px;*/
+}
+main .wrapper_slider{
+    width: 100%;
+    margin-top:0px;
+     background-image: url("../img/slide-bg-complexity.jpg");
+    background-position: 50% 0%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
 }
 
 .slider{
@@ -233,7 +241,7 @@ main{
 
 .icons{
     width: 100%;
-    margin-top: 20px;
+    margin-top: -31px;
     height: 420px;
     background-color: #42a1c7;
     clear: both;
@@ -302,6 +310,8 @@ main{
     width: 100%;
     background-image: url("../img/news-and-events-bg.jpg");
     background-repeat: no-repeat;
+    background-position: 50% 0;
+    background-attachment: fixed;
     height: 455px;
     margin-top: -30px;
 }
