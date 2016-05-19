@@ -3,6 +3,12 @@ html{
     font-size:100%; 
 }
 
+/*
+* {
+  box-sizing: border-box;
+}
+*/
+
 body{
     margin: 0 auto;
     background-color: #ffffff;
@@ -79,7 +85,7 @@ head_menu {
 
 .head_right .divider_img{
     float: left;
-    padding: 0 14px 0;
+    padding: 0 6px 0;
 }
 
 .head_right .costumer_name{
@@ -99,12 +105,57 @@ display: none;
 
 
 .head_right .search input{
-  width: 154px;
+  width: 167px;
   height:18px;
-  float: left;
+  display: inline-block;
   border:1px solid #d2d2d2; 
   border-radius: 5px;
+/*    float: left;*/
 }
+
+button.magnify{
+    color: #0099CC;
+    border:none;
+    width: 30px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    text-align: center;
+    margin-left: -22px;
+    height: 24px;
+   background: url("../img/searchBtn.png") no-repeat scroll 0px 6px transparent;
+    
+}
+
+button.magnify .magnify_img{
+    display: inline-block;
+
+}
+
+
+
+/*
+.head_right .search input button.magnify{
+    border-left: 1px solid #D5D5D5;
+    width: 30px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    display: inline-block;
+    float: left;
+}
+
+.head_right .search input button.magnify::before{
+    color: #0099CC;
+    border-left: 1px solid #D5D5D5;
+    width: 30px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    text-align: center;
+    display: inline-block;
+    float: left;
+    content: "\f002"
+}
+*/
+
 
 /*******Header Finished*****/
 
@@ -121,7 +172,7 @@ main .wrapper_slider{
     width: 100%;
     margin-top:0px;
      background-image: url("../img/slide-bg-complexity.jpg");
-    background-position: 50% 0%;
+    background-position: 50% 80%;
     background-attachment: fixed;
     background-repeat: no-repeat;
 }
@@ -180,7 +231,7 @@ main .wrapper_slider{
 
 .slider_boxes{
     width: 950px;
-    margin-top: 86px;
+    margin-top: 45px;
 }
 
 .slider_boxes .boxes{
@@ -241,7 +292,7 @@ main .wrapper_slider{
 
 .icons{
     width: 100%;
-    margin-top: -31px;
+    margin-top: -35px;
     height: 420px;
     background-color: #42a1c7;
     clear: both;
@@ -310,7 +361,7 @@ main .wrapper_slider{
     width: 100%;
     background-image: url("../img/news-and-events-bg.jpg");
     background-repeat: no-repeat;
-    background-position: 50% 0;
+    background-position: 50% 2%;
     background-attachment: fixed;
     height: 455px;
     margin-top: -30px;
@@ -518,7 +569,7 @@ aside.stories .wrapper_stories h2{
 
 .wrapper_stories .btn_stories{
     width: 950px;
-    margin: 398px 42%;
+    margin: 378px 42%;
 }
 
 .wrapper_stories button{
@@ -552,13 +603,34 @@ footer{
     margin: 0 auto;
 }
 
+footer .main_footer nav.footer{
+    width: 640px;
+}
+
+.menu_list  ul.menu_list{
+     display: inline-block;
+    text-decoration: none;
+    
+}
+
+.main_footer .footer nav.footer .menu_list ul.menu_list li{
+     display: inline-block;
+    list-style: none;
+    text-decoration: none;
+    
+}
+
+
+/*
+
+
 .main_footer nav{
     width: 676px;
-    float: left;
+    display: inline-block;
 }
 
 .main_footer nav ul.menu_footer{
-    display: inline;
+    display: inline-block;
     list-style: none;
     color: #eeeeee;
 }
@@ -581,6 +653,7 @@ font-size:0.9em;
      width: 269px;
     float: right;
 }
+*/
 
 
 
