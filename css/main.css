@@ -19,6 +19,7 @@ header{
     width: 100%;
     box-shadow: 0px 1px 20px black ;
     height:90px;
+    position: relative;
    }
 
 .main_head{
