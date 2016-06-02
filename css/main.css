@@ -30,10 +30,10 @@ header{
 
 .head_left{
     float: left;
-    /*width: 730px;*/
+    /*width: 730px;
     position: absolute;
     top: 0;
-    left: 197px;
+    left: 197px;*/
 }
 
 .head_logo img{
@@ -187,9 +187,13 @@ header{
 .mega_list_img a:hover{
     background: #fcfcfc;
     box-shadow: 0px 0px 0px 0px transparent !important;
+    border: 1px solid transparent !important;
+    line-height: 0px;
+/*
     border-top:0 !important;
     border-right:0 !important;
     border-left:0 !important;
+*/
 }
 
 /* clearfix for floated elements */
@@ -694,6 +698,7 @@ aside.stories .wrapper_stories h2{
     width: 350px;
     height: 318px;
     padding-left: 10px;
+
 }
 
 .wrapper_stories .main_history:nth-child(4){
@@ -704,22 +709,53 @@ aside.stories .wrapper_stories h2{
  
 }
 
-
 .main_history .history{
     width: 97.5%;
     height: 210px;
-    background-color: #fff;
+        background-color: #1389c4;
     border-radius: 4px;
+    position:relative;
+    overflow: hidden;
 }
+
 
 .main_history .history:nth-child(2){
     width: 97.5%;
     height: 210px;
-    background-color: #fff;
+        background-color: #1389c4;
     border-radius: 4px;
     margin-top: 117px;
     
 }
+
+.history .wrapper_story{
+    width: 100%;
+    height: 210px;
+    background-color: #fff;
+    border-radius: 4px;
+    transition: top 0.6s, ease-in-out;
+	top: 0;
+	position: absolute;
+}
+
+.history .wrapper_story:nth-child(2){
+    width: 100%;
+    height: 210px;
+    background-color: #fff;
+    border-radius: 4px;
+    margin-top: 117px;
+    transition: top 0.6s, ease-in-out;
+	top: 0;
+	position: absolute;
+}
+
+.history:hover .wrapper_story,
+.history .wrapper_story:nth-child(2)
+{
+    	transition: top 0.6s, ease-in-out;
+	top: -210px;
+}
+
 
 .main_history .history .testimonial{
     width: 100%;
@@ -781,6 +817,7 @@ aside.stories .wrapper_stories h2{
     padding-left: 0px;
     margin-top: 5px;
     width: 350px;
+    position: relative;
 }
 
 
@@ -791,15 +828,29 @@ aside.stories .wrapper_stories h2{
     width: 108px;
     height: 97px;
     border-radius: 4px;
-    background-color: #fff;
+    position: relative;
     margin-right: 8px;
+    background: url(../img/logos_generic_2nd_side_cut_02_w108px_x_h95px.jpg) no-repeat;
+    overflow: hidden;
 }
 .companies_icons ul li img{
    width: 108px;
+   transition: top 0.6s, ease-in-out;
+   top: 0;
+   position: absolute;      
 }
+
+.companies_icons ul li:hover img{
+   transition: top 0.6s, ease-in-out;
+   top: -96px;
+   
+}
+
+
 .wrapper_stories .btn_stories{
     width: 950px;
     margin: 378px 42%;
+    
 }
 
 .wrapper_stories button{
@@ -1101,5 +1152,3 @@ address a:hover{
     text-decoration:underline;
         color: #808080;
 }
-
-
