@@ -38,9 +38,9 @@ header{
 
 .head_logo img{
     float:left;
-    width: 189px;
-    padding-top: 11px;
-    display: block
+    width: 33%;
+    padding-top: 11px; 
+    display: block;
 }
 
 /********MENU********/
@@ -84,7 +84,7 @@ header{
     border: 1px solid transparent;
 }
 
-.head_menu>ul>li a:hover{
+.head_menu>ul>li:hover a{
   color:#3399cc;
   background: #fcfcfc;
   box-shadow: -7px 2px 5px 0px rgba(102,102,102,0.67);
@@ -145,24 +145,28 @@ header{
      background: #fcfcfc;
     font-size:1em;
     color:#585951;
-    box-shadow: 0px 0px 0px 0px transparent;
+    box-shadow: 0px 0px 0px 0px transparent !important;
     line-height: 10px;
+    
+    
 }
 
 .mega_list>ul>li a{
-    background: #fcfcfc;
-    border:0;
-    height: 10px;
-    vertical-align: top;
-    padding-top:0;
+    background: #fcfcfc !important;
+    border:1px solid transparent !important  ;
+    height: 10px !important;
+    color:#585951 !important;
+    vertical-align: top !important;
+    padding-top:0 !important;
+    box-shadow: 0px 0px 0px 0px transparent !important;
 
 }
 
 
 
-.mega_list>ul>li a:hover{
+.mega_list>ul>li:hover a{
     background: #fcfcfc;
-    color:#3399cc;
+    color:#3399cc !important;
     box-shadow: 0px 0px 0px 0px transparent;
     border:0;
     height: 10px;
@@ -179,21 +183,19 @@ header{
     margin-top: 15px;
 }
 .mega_list_img a{
-
-    clear: both;
-
-}
-
-.mega_list_img a:hover{
-    background: #fcfcfc;
+    background: #fcfcfc !important;
     box-shadow: 0px 0px 0px 0px transparent !important;
     border: 1px solid transparent !important;
     line-height: 0px;
-/*
-    border-top:0 !important;
-    border-right:0 !important;
-    border-left:0 !important;
-*/
+    clear: both;
+    padding-bottom: 0px !important;
+}
+
+.mega_list_img a:hover{
+    background: #fcfcfc !important;
+    box-shadow: 0px 0px 0px 0px transparent !important;
+    border: 1px solid transparent !important;
+    line-height: 0px;
 }
 
 /* clearfix for floated elements */
@@ -219,7 +221,8 @@ header{
     width: 46px;
     border:none;
     outline: 0;
-    
+    font-size: 1em;
+
 }
 
 .head_right .divider_img{
@@ -229,6 +232,7 @@ header{
 
 .head_right .costumer_name{
     float:left;
+    font-size: 1em;
 }
 
 .head_right .search{
@@ -286,10 +290,11 @@ main .wrapper_slider{
     width: 100%;
     margin-top:0px;
      background-image: url("../img/slide-bg-complexity.jpg");
-    background-position: 50% 80%;
+    background-position: 50% 0%;
     background-attachment: fixed;
     background-repeat: no-repeat;
     position: relative;
+    background-size: cover;
 }
 
 .slider{
@@ -350,7 +355,7 @@ main .wrapper_slider{
 }
 
 .slider_boxes .boxes{
-   width: 293px;
+   width: 30.5%;
     height: 176px;
     float: left;
     background-color: #fa429e;
@@ -381,6 +386,7 @@ main .wrapper_slider{
     font-family:Open Sans Light, sans-serif;
     font-size: 1.2em;
     padding: 0px 22px;
+    height: 50%;
 }
 
 .slider_boxes .boxes p{
@@ -388,31 +394,23 @@ main .wrapper_slider{
     font-weight: bold;
     font-size: 0.9em;
     color: #fff;
-    position: absolute;
-    left: 22px;
-    top: 123px;
+    height: 50%;
+    padding:0 0 0 22px;
 }
+
 
 .slider_boxes .boxes p img{
     float:left;
     padding: 0px 6px 0 0;
 }
 
-
-.slider_boxes .boxes p:nth-child(3){
-   padding: 42px 22px;
-}
-
-.slider_boxes .boxes p img:nth-child(3){
-   padding: 24px 6px 0 0; 
-}
-
-
 .icons{
     width: 100%;
     margin-top: -35px;
     height: 420px;
-    background-color: #42a1c7;
+    background: url("../img/weDoBG.png") repeat scroll 0 0, radial-gradient(ellipse at center, #59bedb 0%,#3399cc 100%);
+/*    background-color: #42a1c7;*/
+/*    background-repeat: repeat-x;*/
     clear: both;
 }
 
@@ -566,10 +564,11 @@ main .wrapper_slider{
     width: 100%;
     background-image: url("../img/news-and-events-bg.jpg");
     background-repeat: no-repeat;
-    background-position: 50% 2%;
+    background-position: 50% 0%;
     background-attachment: fixed;
     height: 455px;
     margin-top: -30px;
+    background-size: cover;
 }
 
 .events h2{
@@ -698,7 +697,6 @@ aside.stories .wrapper_stories h2{
     width: 350px;
     height: 318px;
     padding-left: 10px;
-
 }
 
 .wrapper_stories .main_history:nth-child(4){
@@ -706,8 +704,7 @@ aside.stories .wrapper_stories h2{
     width: 230px;
     height: 318px;
     margin-right: -10px;
- 
-}
+ }
 
 .main_history .history{
     width: 97.5%;
@@ -725,7 +722,6 @@ aside.stories .wrapper_stories h2{
         background-color: #1389c4;
     border-radius: 4px;
     margin-top: 117px;
-    
 }
 
 .history .wrapper_story{
@@ -775,7 +771,6 @@ aside.stories .wrapper_stories h2{
     float:left;
 }
 
-
 .main_history .history .name_title{
    width: 100%;
    padding:20px 20px;
@@ -800,7 +795,6 @@ aside.stories .wrapper_stories h2{
     margin:-25px 23px 0 0;
 }
 
-
 .main_history .companies_icons{
     margin-top:10px;
     width: 350px;
@@ -808,8 +802,7 @@ aside.stories .wrapper_stories h2{
 
 .main_history .companies_icons:nth-child(1){
     margin-top:-4px;
- }
-
+}
 
 .companies_icons ul{
     float: left;
@@ -842,15 +835,12 @@ aside.stories .wrapper_stories h2{
 
 .companies_icons ul li:hover img{
    transition: top 0.6s, ease-in-out;
-   top: -96px;
-   
+   top: -96px;  
 }
-
 
 .wrapper_stories .btn_stories{
     width: 950px;
-    margin: 378px 42%;
-    
+    margin: 378px 42%;    
 }
 
 .wrapper_stories button{
@@ -864,8 +854,7 @@ aside.stories .wrapper_stories h2{
     text-align: left;
     padding-left: 12px;
 /*    margin: 200px auto;*/
-    cursor: pointer;
-    
+    cursor: pointer;    
 }
 
 .wrapper_stories button img{
@@ -884,14 +873,11 @@ footer{
     width: 950px;
     margin: 0 auto;
     position: relative;
-
 }
 
 .main_footer .footer{
     display: inline-block;
-    width: 676px;
-    
-    
+    width: 676px;   
 }
 
 .menu_wrapper_1,
@@ -900,10 +886,7 @@ footer{
 {
     display:block;
     float: left;
-    width: 224px;
- 
-
-  
+    width: 224px; 
 }
 
 .menu_wrapper_1 h6,
@@ -915,7 +898,7 @@ footer{
     font-family: Open Sans Light,sans-serif;
     letter-spacing: 1px;
     margin-bottom: 5px;
-  }
+}
 
 
 
@@ -927,7 +910,7 @@ footer{
     clear: both;
     padding:0px 71px 0 0;
     
-  }
+}
 
 .menu_wrapper_1 ul li,
 .menu_wrapper_2 ul li,
@@ -938,7 +921,7 @@ footer{
     font-family: Open Sans Light,sans-serif;
     letter-spacing: 1px;
     line-height: 20px;
-  }
+}
 
 .menu_wrapper_1 ul li a:link,
 .menu_wrapper_2 ul li a:link,
@@ -947,15 +930,14 @@ footer{
     color: #d4d4d4;
     text-decoration: none;
  
-  }
+}
 
 .menu_wrapper_1 ul li a:hover,
 .menu_wrapper_2 ul li a:hover,
 .menu_wrapper_3 ul li a:hover
 {
     text-decoration:underline;
- 
-  }
+}
 
 .menu_wrapper_1 ul li a:visited,
 .menu_wrapper_2 ul li a:visited,
@@ -970,8 +952,7 @@ footer{
     background-color: rgba(64,64,64,0.8);
     vertical-align: top;
     display: inline-block;
-  
-}
+  }
 
 .blog p{
     color:#4ea7d3;
@@ -982,7 +963,6 @@ footer{
     text-transform: uppercase;
     padding-top: 12px;
     clear: both;
-    
 }
 
 .blog .subscribe{
@@ -1152,3 +1132,111 @@ address a:hover{
     text-decoration:underline;
         color: #808080;
 }
+
+
+@media screen and (max-width: 768px){
+    .head_menu{
+            margin: 55px 0 0 10px;
+    }
+    
+.head_logo img{
+    width: 46%;
+}    
+       
+.head_menu>ul>li{
+  font-size: 0.7em;
+    
+} 
+  
+.head_menu>ul>li a{
+   padding: 10px 3px 10px 3px;
+}    
+    
+.head_right {
+   margin-right: 172px;
+ }      
+.slider_boxes .boxes{
+   width: 100%;
+    height: 176px;
+    display: block;
+    float: left;
+}
+    
+.head_right .search input{
+     width: 150px;
+}
+    
+.head_right .languages {
+    font-size: 0.9em;
+}    
+.head_right .costumer_name{
+   font-size: 0.9em;
+}
+.head_right .divider_img{
+    padding: 0 2px 0;
+}
+    
+.slider h1,
+.slider .policy,
+.slider button{
+    margin-left: 20px;
+}
+    
+.slider_boxes .boxes{
+  margin: 8px 22px 0px 1px;      
+} 
+
+.slider_boxes .boxes:last-child{
+  margin: 8px 22px 10px 1px;      
+}     
+    
+.icons .main_icons{
+   width: 767px; 
+}   
+.main_icons ul li{
+  padding-left: 0;
+  width: 126px;
+}   
+    
+.events{
+   height: 358px;     
+}
+
+.inside_boxes{
+  width: 234px;
+  margin-right: 0px;
+  margin-left: 7px;
+} 
+    
+.inside_boxes ul {
+ display: block;
+    width: 220px;   
+}  
+    
+.inside_boxes h3{
+    margin-top:0;
+}    
+
+.inside_boxes a p{
+ }
+
+aside.stories .wrapper_stories{
+ margin: 0px auto;
+}
+    
+/*FOOTER COLAPSE*/
+    
+footer{
+      height: 50px;  
+}    
+
+ .main_footer .footer,
+ .main_footer .blog
+{
+    display: none;
+}  
+
+address{
+    top: 17px;
+    left: 22px;
+}    
